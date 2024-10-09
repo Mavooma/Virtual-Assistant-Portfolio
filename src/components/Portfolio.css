@@ -1,0 +1,66 @@
+/* Container for the portfolio section */
+.portfolio-section {
+  padding: 50px;
+  background-color: #e2d7ca; /* Same background color as services section */
+}
+
+/* Title of the portfolio section */
+.portfolio-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #4f473f; /* Same color as services section title */
+}
+
+/* Container for all portfolio cards */
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px; /* Space between cards */
+}
+
+/* Individual portfolio card */
+.portfolio-card {
+  flex: 1 1 calc(30% - 20px); /* Adjusted to make cards smaller */
+  margin: 0;
+  padding: 20px;
+  background-color: #fff; /* White background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border-radius: 8px; /* Rounded corners */
+  text-align: center;
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Image inside the portfolio card */
+.portfolio-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Rounded corners for images */
+}
+
+/* Title of each portfolio project */
+.portfolio-project-title {
+  font-size: 1.5rem; /* Project title font size */
+  margin-top: 10px;
+  color: #333; /* Dark gray color */
+}
+
+/* Description under each project title */
+.portfolio-description {
+  margin-top: 8px;
+  font-size: 1rem; /* Description font size */
+  color: #555; /* Medium gray color */
+}
+
+/* Hover effect for portfolio cards */
+.portfolio-card:hover {
+  transform: scale(1.05); /* Slightly enlarges the card on hover */
+}
+
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+  .portfolio-card {
+    flex: 1 1 100%; /* Stacks cards vertically on smaller screens */
+  }
+}

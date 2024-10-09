@@ -1,0 +1,71 @@
+.services-title {
+  font-size: 2em;
+  font-weight: bold;
+  color: #4f473f; /* Title color */
+  margin-bottom: 40px; /* Spacing between the title and the service cards */
+  text-transform: uppercase; /* Optional: Makes the title uppercase */
+}
+
+.services-section {
+  background-color: #e2d7ca; /* Replace with your preferred background color */
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* Grid container for the services */
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four columns */
+  gap: 40px;
+  justify-items: center;
+}
+
+/* Individual service card */
+.service-card {
+  background-color: white; /* Light background color for the service card */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-card:hover {
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Image styling */
+.service-image {
+  width: 200px; /* Set image size */
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Service title */
+.service-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #4f473f;
+  margin-bottom: 10px;
+}
+
+/* Service description */
+.service-description {
+  font-size: 16px;
+  color: black;
+  line-height: 1.5;
+}
+
+/* Responsive layout */
+@media (max-width: 1024px) {
+  .services-container {
+    grid-template-columns: repeat(2, 1fr); /* Two columns on tablet */
+  }
+}
+
+@media (max-width: 768px) {
+  .services-container {
+    grid-template-columns: 1fr; /* One column on mobile */
+  }
+}

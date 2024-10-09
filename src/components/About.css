@@ -1,0 +1,146 @@
+/* Hero Section */
+.hero {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  color: #4f473f;
+}
+
+.wave-emoji {
+  font-size: 1.2em;
+}
+
+.name {
+  font-weight: bold;
+  color: #4f473f;
+  display: inline-block;
+  opacity: 0;
+  animation: fadeInOut 4s infinite;
+}
+
+.hero-image {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 450px;
+  border-radius: 50%;
+}
+
+/* Content Section without container */
+.content-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background-color: #f8f4ee;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.text-content {
+  flex: 1 1 45%; /* Takes up 45% of the width, adjust as needed */
+  padding-right: 50px; /* Space between text and image */
+  text-align: left;
+}
+
+.text-content h2 {
+  font-size: 2em;
+  color: #4f473f;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.text-content p {
+  font-size: 16px;
+  color: black;
+  line-height: 1.5em;
+}
+
+.image-content {
+  flex: 1 1 45%; /* Takes up 45% of the width, adjust as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-image {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    margin-top: 50px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .content-section {
+    flex-direction: column; /* Stack text and image vertically */
+    padding: 20px;
+  }
+
+  .text-content {
+    flex: 1 1 100%; /* Full width for smaller screens */
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .image-content {
+    flex: 1 1 100%;
+  }
+
+  .text-content h2 {
+    font-size: 1.5em;
+  }
+
+  .text-content p {
+    font-size: 14px;
+  }
+
+  .hero-image,
+  .section-image {
+    max-width: 300px; /* Reduce image size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .wave-emoji {
+    font-size: 1em;
+  }
+
+  .text-content p {
+    font-size: 12px;
+  }
+
+  .hero-image,
+  .section-image {
+    max-width: 200px; /* Further reduce image size for very small screens */
+  }
+}
+
+/* Keyframes for Animation */
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}

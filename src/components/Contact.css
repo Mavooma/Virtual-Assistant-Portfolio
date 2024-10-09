@@ -1,0 +1,133 @@
+/* Container for the contact section */
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  background-color: #e2d7ca;
+  color: #da876e;
+}
+
+.contact-left {
+  width: 40%;
+}
+
+.contact-left h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.contact-left p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.signature {
+  margin-top: 20px;
+  font-style: italic;
+}
+
+.signature-name {
+  font-family: "Cursive", sans-serif;
+  font-size: 24px;
+}
+
+/* Make the form smaller by adjusting the width */
+.contact-right {
+  width: 35%; /* Reduced width for smaller form */
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  color: #4f473f;
+  margin: 0 auto; /* Center the form */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-row label {
+  width: 48%;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px; /* Reduced padding for smaller input fields */
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+textarea {
+  height: 80px; /* Slightly smaller height */
+  resize: vertical;
+}
+
+.required-star {
+  color: red;
+  margin-left: 5px;
+}
+
+fieldset {
+  margin-top: 20px;
+  border: none;
+}
+
+legend {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.submit-button {
+  margin-top: 20px;
+  padding: 12px; /* Reduced button size */
+  background-color: #ff4500;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #da876e;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact-section {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .contact-left,
+  .contact-right {
+    width: 100%;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .form-row label {
+    width: 100%;
+  }
+}
